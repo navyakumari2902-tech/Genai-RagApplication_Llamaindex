@@ -1,0 +1,101 @@
+03_Prompttemplates_with_LlamaIndex
+# Prompt Engineering with LlamaIndex – Learning Repository
+
+This repository contains small experiments and examples while learning Prompt Templates in LlamaIndex. The purpose of this repo is to understand how prompts can be dynamically structured, formatted, and reused when building LLM applications.
+
+The examples demonstrate concepts such as prompt templates, variable mapping, partial formatting, and function mappings for prompt preprocessing.
+
+This repository is part of my Generative AI learning journey.
+
+
+## Repository Structure
+
+.
+├── prompt-function-call.py  
+├── prompt-partial-formatting.py  
+├── prompt-variable-mapping.py  
+├── prompt-convo.ipynb  
+
+
+## Concepts Covered
+
+### 1. Prompt Template with Function Mapping
+
+File: prompt-function-call.py
+
+This example demonstrates how to apply a custom formatting function inside a prompt template.
+
+A function is used to preprocess the context before inserting it into the prompt. In this example, the context string is split into lines and formatted into bullet points to improve readability for the LLM.
+
+Key idea:
+A function mapping allows transformation of prompt variables before they are inserted into the template.
+
+
+### 2. Partial Prompt Formatting
+
+File: prompt-partial-formatting.py
+
+This example demonstrates partial formatting of prompt templates.
+
+Sometimes a prompt has multiple variables but one of them can be fixed beforehand. Partial formatting allows setting that value while leaving the other variables to be filled later.
+
+Example concept:
+The tone of the answer is predefined while the context and query are inserted later when formatting the prompt.
+
+This helps create reusable prompt templates.
+
+
+### 3. Variable Mapping in Prompt Templates
+
+File: prompt-variable-mapping.py
+
+This example shows how variable mapping works in LlamaIndex prompt templates.
+
+Sometimes the variable names used in the code differ from the ones defined in the prompt template. Variable mapping allows linking external variable names with the template variables.
+
+For example:
+my_context can map to context_str  
+my_query can map to query_str
+
+This makes it easier to integrate prompts into larger pipelines.
+
+
+### 4. Conversational Prompt Experiment
+
+File: prompt-convo.ipynb
+
+This notebook explores conversational prompt structures and prompt formatting in an interactive environment. It allows experimenting with prompts and observing outputs quickly while learning.
+
+
+## Installation
+
+Clone the repository
+
+git clone https://github.com/navyakumari2902-tech/<repo-name>.git
+
+cd <repo-name>
+
+Install dependencies
+
+pip install llama-index
+
+
+## How to Run
+
+Example commands
+
+python prompt-function-call.py
+
+python prompt-partial-formatting.py
+
+
+## Learning Outcome
+
+Through these experiments I learned:
+
+- How LlamaIndex PromptTemplate works
+- How to preprocess prompt variables using function mappings
+- How partial formatting helps reuse prompt templates
+- How variable mapping helps integrate prompts into larger applications
+
+These concepts are important when building applications such as RAG pipelines, LLM assistants, and prompt-driven AI workflows.
