@@ -1,4 +1,4 @@
-Semantic Similarity Evaluation with LlamaIndex
+# Semantic Similarity Evaluation with LlamaIndex
 
 This repository demonstrates how to evaluate semantic similarity between two texts using the LlamaIndex evaluation framework.
 
@@ -6,7 +6,7 @@ The script compares a response text with a reference text and calculates a simil
 
 This project is part of my LlamaIndex and Generative AI learning journey.
 
-Overview
+# Overview
 
 Semantic similarity measures how close two texts are in meaning, even if the wording is different.
 
@@ -25,7 +25,7 @@ floor is occupied by mat
 Even though the wording differs, both texts express the same meaning.
 The evaluator detects this using embedding-based similarity scoring.
 
-Module Used
+#Module Used
 
 This example uses the following component from LlamaIndex:
 
@@ -50,7 +50,7 @@ passing	Boolean indicating whether the similarity exceeds the threshold
 
 Default similarity threshold: 0.8
 
-Project Structure
+# Project Structure
 semantic-similarity-llamaindex
 │
 ├── semantic_similarity.py
@@ -58,7 +58,7 @@ semantic-similarity-llamaindex
 
 This repository contains a single Python script demonstrating semantic similarity evaluation.
 
-Implementation Logic
+# Implementation Logic
 
 The script follows these steps:
 
@@ -102,7 +102,8 @@ def main():
 
 if __name__ == "__main__":
     main()
-Installation
+
+# Installation
 
 Install the required dependencies:
 
@@ -117,7 +118,7 @@ Example Output
 score: 0.91
 pass: True
 
-Explanation:
+# Explanation:
 
 score → similarity between the response and reference texts
 
@@ -139,7 +140,7 @@ Billing is not enabled
 
 API key is not configured
 
-Solution
+# Solution
 
 Set your OpenAI API key:
 
